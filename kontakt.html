@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt - Counter-Strike 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Counter-Strike 2</h1>
+
+    <nav>
+        <ul>
+            <li><a href="uvod.html">Úvod</a></li>
+            <li><a href="herni-mody.html">Herní módy</a></li>
+            <li><a href="mapy.html">Mapy</a></li>
+            <li><a href="tipy.html">Tipy</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section>
+        <h2>Kontaktní formulář</h2>
+
+        <p>
+            Pomocí tohoto formuláře mě můžeš kontaktovat ohledně CS2, tipů na hraní nebo jakýchkoliv dotazů.
+        </p>
+
+        <form>
+            <label>
+                Jméno a příjmení:
+                <input type="text" name="jmeno" required>
+            </label>
+
+            <label>
+                Věk:
+                <input type="number" name="vek" min="1" >
+            </label>
+
+            <label>
+                Dnešní datum:
+                <input type="date" name="datum">
+            </label>
+
+            <label>
+                <input type="checkbox" required>
+                Souhlasím se zpracováním údajů
+            </label>
+
+            <p>Jaký jsi typ hráče?</p>
+            <label>
+                <input type="radio" name="typ" value="casual">
+                Casual hráč
+            </label>
+            <label>
+                <input type="radio" name="typ" value="competitive">
+                Competitive hráč
+            </label>
+
+            <label>
+                Oblíbený herní mód:
+                <select name="mod">
+                    <option value="competitive">Competitive</option>
+                    <option value="premier">Premier</option>
+                    <option value="faceit">Faceit</option>
+                    <option value="Wingman">Wingman</option>
+                </select>
+            </label>
+
+            <label>
+                Zpráva:
+                <textarea name="zprava" rows="4"></textarea>
+            </label>
+
+            <button type="submit">Odeslat</button>
+        </form>
+    </section>
+</main>
+
+<footer>
+    <p>Pololetní projekt - David Cendelín</p>
+</footer>
+
+</body>
+</html>
